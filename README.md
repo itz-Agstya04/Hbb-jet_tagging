@@ -61,7 +61,9 @@ The project follows a standard supervised learning workflow:
    - Feature distributions
    - Model performance plots
    - Training diagnostics
-   - ## Results Summary
+
+
+## Results Summary
 
 The jet tagging models were evaluated using standard binary classification metrics.
 Both classical machine learning and neural network–based models were trained and compared.
@@ -72,6 +74,14 @@ Key observations:
 - The results demonstrate that machine learning–based approaches can effectively separate Higgs-origin jets from background jets in this dataset.
 
 Performance is reported using ROC curves and AUC scores, with visualizations available in the notebooks.
+
+
+## Limitations
+
+- The dataset is based on simulated events and does not include full detector effects.
+- The analysis focuses on binary classification and does not cover multi-class jet tagging.
+- Advanced architectures such as graph neural networks or Lorentz-equivariant models are not explored.
+- The goal of this project is methodological exploration rather than state-of-the-art performance.
 
 
 
