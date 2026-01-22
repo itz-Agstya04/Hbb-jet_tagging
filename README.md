@@ -63,25 +63,21 @@ The project follows a standard supervised learning workflow:
    - Training diagnostics
 
 
-## Results Summary
+## Results
 
-The jet tagging models were evaluated using standard binary classification metrics.
-Both classical machine learning and neural network–based models were trained and compared.
+The performance of multiple classifiers was evaluated using ROC-AUC and accuracy metrics.
+
+| Model                  | ROC-AUC | Accuracy |
+|------------------------|---------|----------|
+| Logistic Regression    | 0.9049  | 0.8179   |
+| XGBoost                | 0.9769  | 0.9503   |
+| Multi-Layer Perceptron | 0.9711  | 0.9463   |
 
 Key observations:
-- Gradient-boosted tree models provide a strong baseline performance.
-- Neural network models achieve improved discrimination by learning nonlinear feature interactions.
-- The results demonstrate that machine learning–based approaches can effectively separate Higgs-origin jets from background jets in this dataset.
-
-Performance is reported using ROC curves and AUC scores, with visualizations available in the notebooks.
-
-
-## Limitations
-
-- The dataset is based on simulated events and does not include full detector effects.
-- The analysis focuses on binary classification and does not cover multi-class jet tagging.
-- Advanced architectures such as graph neural networks or Lorentz-equivariant models are not explored.
-- The goal of this project is methodological exploration rather than state-of-the-art performance.
+- Logistic regression provides a strong linear baseline, indicating good feature quality.
+- XGBoost achieves the best overall performance, capturing complex nonlinear interactions in the data.
+- The neural network performs competitively with XGBoost, confirming the effectiveness of learned nonlinear representations.
+- Tree-based methods slightly outperform the MLP in this setting, suggesting structured feature interactions are important for jet tagging.
 
 
 
