@@ -61,6 +61,18 @@ The project follows a standard supervised learning workflow:
    - Feature distributions
    - Model performance plots
    - Training diagnostics
+   - ## Results Summary
+
+The jet tagging models were evaluated using standard binary classification metrics.
+Both classical machine learning and neural network–based models were trained and compared.
+
+Key observations:
+- Gradient-boosted tree models provide a strong baseline performance.
+- Neural network models achieve improved discrimination by learning nonlinear feature interactions.
+- The results demonstrate that machine learning–based approaches can effectively separate Higgs-origin jets from background jets in this dataset.
+
+Performance is reported using ROC curves and AUC scores, with visualizations available in the notebooks.
+
 
 
 ## Repository Structure
